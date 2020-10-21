@@ -1,0 +1,8 @@
+java -jar %1 -role hub  -hubConfig %2 
+E:\Users\Administrator\workspace\selenium\src\gridjson\starthub.bat
+E:\Users\Administrator\workspace\selenium\tool\selenium-server-standalone-2.40.0.jar  E:\Users\Administrat
+or\workspace\selenium\src\gridjson\hub.json
+
+cmd /c  start E:\Users\Administrator\workspace\selenium\src\gridjson\starthub.bat  
+E:\Users\Administrator\workspace\selenium\tool\selenium-server-standalone-2.40.0.jar 
+E:\Users\Administrator\workspace\selenium\src\gridjson\hub.json
