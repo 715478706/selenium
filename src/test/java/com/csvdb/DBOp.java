@@ -23,7 +23,9 @@ public class DBOp {
 			Class.forName("org.sqlite.JDBC");//注册驱动
 			Connection conn =DriverManager.getConnection(databasepath);
 			stat=conn.createStatement();
-		} catch (SQLException | ClassNotFoundException e) {
+		} catch (SQLException  e) {
+			e.printStackTrace();
+		}catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
@@ -31,9 +33,11 @@ public class DBOp {
 			try {
 				Class.forName("org.sqlite.JDBC");//注册驱动
 				Connection conn =DriverManager.getConnection("jdbc:sqlite:"+System.getProperty("user.dir")+
-				"/src/com/csvdb/Mail126Page.sqlite");
+				"/src/test/java/com/csvdb/Mail126Page.sqlite");
 				stat=conn.createStatement();
-			} catch (SQLException | ClassNotFoundException e) {
+			} catch (SQLException  e) {
+				e.printStackTrace();
+			}catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			}
 		}
@@ -59,11 +63,11 @@ public class DBOp {
 	}
 	public String getLocatorXpath(String locatorname){
 		String xpath=null;
-		String sql="select * from "+tablename+"where guang='"+locatorname+"';";
+		String sql="select * from "+tablename+"where username='"+locatorname+"';";
 		try {
 			rsq=stat.executeQuery(sql);
 			while(rsq.next()){
-			 xpath=rsq.getString("guang");
+			 xpath=rsq.getString("xpath");
 			}
 			rsq.close();
 		} catch (SQLException e) {
@@ -91,7 +95,7 @@ public class DBOp {
 	}
 
 	public static void main(String[] args) {
-		DBOp test=new DBOp("tablename");
+		DBOp test=new DBOp("mailpage");
 		test.conn();
 		System.out.println(test.getLocatorXpath());
 		for(String str : test.getLocatorXpath()) {
