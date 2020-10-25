@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default suite">
+    <parameter name="da" value="/src/test/java/properties/test.properties"></parameter>
+    <parameter name="loc" value="/src/test/java/properties/test.properties"></parameter>
+  <test verbose="2" name="Default test">
+      <groups><!-- 三个模块 -->
+          <define name="submodule1"></define>
+          <define name="submodule2"></define>
+          <define name="submodule3"></define>
+          <define name="module1">
+              <include name="submodule1"></include>
+              <include name="submodule2"></include>
+          </define>
+          <define name="module2">
+              <include name="submodule3"></include>
+              <include name="submodule2"></include>
+          </define>
+<!--           <run> -->
+<!--               <include name="browser"></include> -->
+<!--               <include name="submodule3"></include> -->
+<!--           </run> -->
+      </groups>
+    <classes>
+      <class name="properties.DataDriver">
+<!--           <methods> -->
+<!--               <include name="test2"></include> -->
+<!--           </methods> -->
+        
+      </class> <!-- com.testng.Practice1 -->
+    </classes>
+  </test> <!-- Default test -->
+</suite> <!-- Default suite -->

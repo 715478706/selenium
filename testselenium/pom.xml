@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>testselenium</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>testselenium</name>
+    <description>描述description</description>
+
+
+
+<!--    &lt;!&ndash; sureXmlfiles for testng &ndash;&gt;-->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.17</version>-->
+<!--                <configuration>-->
+
+<!--                    <excludes>-->
+<!--                        <exclude>maventestpom/TestJavaInPom.java</exclude>-->
+<!--                        <exclude>maventestthreads/TestMutipleThreads.java</exclude>-->
+<!--                    </excludes>-->
+
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFile>${project.basedir}/src/maventestjava/TestSureFirePlugin.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+    <!-- .java运行java文件 -->
+     	<build>
+            <defaultGoal>compile</defaultGoal>
+     		<plugins>
+     			<plugin>
+     				<groupId>org.apache.maven.plugins</groupId>
+     				<artifactId>maven-surefire-plugin</artifactId>
+     				<version>2.17</version>
+     				<configuration>
+     					<includes>
+     						<include>test/TestScopeCompile.java</include>
+     					</includes>
+     				</configuration>
+     			</plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>7</source>
+                        <target>7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+     	</build>
+
+
+<!--    &lt;!&ndash; 多线程 &ndash;&gt;-->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <artifactId>maven-surefire-plugin</artifactId>-->
+<!--                <version>2.17</version>-->
+<!--                <configuration>-->
+<!--                    <parallel>methods</parallel>-->
+<!--                    <threadCount>10</threadCount>-->
+<!--                    <excludes>-->
+<!--                        <exclude>maventestthreads/TestMutipleThreads.java</exclude>-->
+<!--                    </excludes>-->
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFile>${project.basedir}/src/maventestjava/TestSureFirePlugin.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.14.3</version>
+        </dependency>
+        <dependency>
+<!--            将testgitinstall到本地仓库并添加到testselenium的依赖中，就能使用testgit的类了-->
+            <groupId>org.example</groupId>
+            <artifactId>testgit</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>p2</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/tool/selenium-server-standalone-3.141.5.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>p3</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/tool/opencsv-3.8.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>p4</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/tool/sqlitejdbc-v056.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>org.example</groupId>
+            <artifactId>p4</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/tool/selenium-server-standalone-3.0.0-beta3.jar</systemPath>
+        </dependency>
+    </dependencies>
+
+</project>

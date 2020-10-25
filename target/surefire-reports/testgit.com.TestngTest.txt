@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: testgit.com.TestngTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.781 sec <<< FAILURE! - in testgit.com.TestngTest
+searchBaidu2(testgit.com.TestngTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: 你说吧，我断言失败了
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.assertNotEquals(Assert.java:1157)
+	at testgit.com.TestngTest.searchBaidu2(TestngTest.java:39)
+

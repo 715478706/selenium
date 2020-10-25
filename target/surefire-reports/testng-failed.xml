@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Default suite]">
+  <test thread-count="5" verbose="0" name="Default test(failed)">
+    <classes>
+      <class name="testgit.com.TestngTest">
+        <methods>
+          <include name="searchBaidu1"/>
+          <include name="searchBaidu2"/>
+          <include name="searchBaidu5"/>
+          <include name="searchBaidu6"/>
+          <include name="searchBaidu"/>
+        </methods>
+      </class> <!-- testgit.com.TestngTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
