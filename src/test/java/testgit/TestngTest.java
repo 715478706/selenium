@@ -1,4 +1,4 @@
-package testgit.com;
+package testgit;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;

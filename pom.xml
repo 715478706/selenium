@@ -53,7 +53,7 @@
                     </suiteXmlFiles>
 <!--运行java文件，从包名开始不需要加${project.basedir}src/test/java，加了无效-->
 <!--                    <includes>-->
-<!--                        <include>testgit/com/TestngTest.java</include>-->
+<!--                        <include>testgit/TestngTest.java</include>-->
 <!--                    </includes>-->
                 </configuration>
 

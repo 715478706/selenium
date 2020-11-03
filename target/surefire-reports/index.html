@@ -1,21 +1,19 @@
-<!DOCTYPE html><html><head>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet">
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
-    
-    <script type="text/javascript">
-$.each($('script'),function(i){
-    console.log($(this).attr('src'))
-	if($(this).attr('src')=='https://www.google.com/jsapi'){
-		$(this).remove()
-		//location.reload();
-	}
-})
-
-console.log($('script'))
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
     </script>
     <!--
       <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
@@ -25,7 +23,7 @@ console.log($('script'))
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <br>
+      <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
@@ -33,7 +31,7 @@ console.log($('script'))
         <span>All suites</span>
         <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
           <img class="collapse-all-icon" src="collapseall.gif">
-           <!-- collapse-all-icon -->
+          </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
@@ -51,7 +49,7 @@ console.log($('script'))
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\blithe&#x56FA;&#x6001;\IdeaProjects\selenium\testng-customsuite.xml</span>
+                    <span>C:\Users\blithe固态\IdeaProjects\selenium\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,15 +101,15 @@ console.log($('script'))
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png">
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testgit.com.TestngTest" hash-for-method="searchBaidu2">searchBaidu2</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testgit.TestngTest" hash-for-method="searchBaidu2">searchBaidu2</a> <!-- method navigator-link -->
                       </span>
-                      <br>
+                      <br/>
                       <span>
-                        <img width="3%" src="passed.png">
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testgit.com.TestngTest" hash-for-method="searchBaidu4">searchBaidu4</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="testgit.TestngTest" hash-for-method="searchBaidu4">searchBaidu4</a> <!-- method navigator-link -->
                       </span>
-                      <br>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -126,8 +124,8 @@ console.log($('script'))
         <div panel-name="suite-Default_suite" class="panel Default_suite">
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png">
-              <span class="class-name">testgit.com.TestngTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">testgit.TestngTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -149,19 +147,20 @@ console.log($('script'))
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\blithe&#x56FA;&#x6001;\IdeaProjects\selenium\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\blithe固态\IdeaProjects\selenium\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <pre>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testgit.com.TestngTest&quot;&gt;
+      &lt;class name=&quot;testgit.TestngTest&quot;&gt;
         &lt;methods&gt;
           &lt;exclude name=&quot;searchBaidu3&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testgit.com.TestngTest --&gt;
+      &lt;/class&gt; &lt;!-- testgit.TestngTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -203,18 +202,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'searchBaidu2')
-data.setCell(0, 2, 'testgit.com.TestngTest')
-data.setCell(0, 3, 2);
+data.setCell(0, 1, 'searchBaidu4')
+data.setCell(0, 2, 'testgit.TestngTest')
+data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'searchBaidu4')
-data.setCell(1, 2, 'testgit.com.TestngTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 1, 'searchBaidu2')
+data.setCell(1, 2, 'testgit.TestngTest')
+data.setCell(1, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -233,10 +232,10 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">testgit.com.TestngTest</span>
+              <span class="ignored-class-name">testgit.TestngTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">searchBaidu3</span>
-                <br>
+                <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -247,39 +246,38 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testgit.com.TestngTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testgit.TestngTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">searchBaidu5</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">searchBaidu1</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">16 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">searchBaidu</span>
-                <span class="method-start">31 ms</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">searchBaidu6</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">34 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchBaidu2</span>
-                <span class="method-start">41 ms</span>
+                <span class="method-start">35 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">searchBaidu6</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchBaidu4</span>
-                <span class="method-start">44 ms</span>
+                <span class="method-start">36 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
-  
-
-</div></body></html>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-package testgit.com;
+package testgit;
 
 import static org.testng.Assert.assertEquals;
 

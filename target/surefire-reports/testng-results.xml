@@ -2,40 +2,40 @@
 <testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+  <suite name="Default suite" duration-ms="23" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
-      <class name="testgit.com.TestngTest">
-        <test-method status="PASS" signature="searchBaidu5()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu5" is-config="true" duration-ms="19" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+    <test name="Default test" duration-ms="23" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
+      <class name="testgit.TestngTest">
+        <test-method status="PASS" signature="searchBaidu5()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu5" is-config="true" duration-ms="15" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu5 -->
-        <test-method status="PASS" signature="searchBaidu1()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu1" is-config="true" duration-ms="0" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+        <test-method status="PASS" signature="searchBaidu1()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu1" is-config="true" duration-ms="0" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu1 -->
-        <test-method status="PASS" signature="searchBaidu()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu" is-config="true" duration-ms="1" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+        <test-method status="PASS" signature="searchBaidu()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu" is-config="true" duration-ms="0" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu -->
-        <test-method status="PASS" signature="searchBaidu2()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu2" duration-ms="2" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+        <test-method status="PASS" signature="searchBaidu6()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu6" is-config="true" duration-ms="1" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBaidu6 -->
+        <test-method status="PASS" signature="searchBaidu2()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu2" duration-ms="0" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu2 -->
-        <test-method status="PASS" signature="searchBaidu6()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu6" is-config="true" duration-ms="0" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+        <test-method status="PASS" signature="searchBaidu6()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu6" is-config="true" duration-ms="0" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu6 -->
-        <test-method status="PASS" signature="searchBaidu6()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu6" is-config="true" duration-ms="0" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchBaidu6 -->
-        <test-method status="PASS" signature="searchBaidu4()[pri:0, instance:testgit.com.TestngTest@48140564]" name="searchBaidu4" duration-ms="1" started-at="2020-10-25T04:21:09Z" finished-at="2020-10-25T04:21:09Z">
+        <test-method status="PASS" signature="searchBaidu4()[pri:0, instance:testgit.TestngTest@48140564]" name="searchBaidu4" duration-ms="1" started-at="2020-11-03T08:03:03Z" finished-at="2020-11-03T08:03:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBaidu4 -->
-      </class> <!-- testgit.com.TestngTest -->
+      </class> <!-- testgit.TestngTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
