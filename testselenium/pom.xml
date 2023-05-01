@@ -89,7 +89,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.14.3</version>
+            <version>7.7.0</version>
         </dependency>
         <dependency>
 <!--            将testgitinstall到本地仓库并添加到testselenium的依赖中，就能使用testgit的类了-->
